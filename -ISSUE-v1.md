@@ -8,6 +8,10 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:gs-anz 2026-06-05 → OLLAMA_SECRET + OLLAMA_URL pending org migration
+
+`GS_ANZ_TOKEN` removed. `OLLAMA_SECRET` and `OLLAMA_URL` still repo-level — pending `admin:org` auth to move to org level. Tracked in `-toiflow/-ISSUE-v1.md`.
+
 ## ISSUE:gs-anz 2026-06-05 → repo-level secrets pending migration to toiflow org level
 
 **Status:** `GS_ANZ_TOKEN`, `OLLAMA_SECRET`, `OLLAMA_URL` are currently set as repo-level secrets in `toiflow/gs-anz`. Plan is to move all three to org-level so any future `toiflow` repo inherits them automatically.

@@ -8,6 +8,15 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:gs-anz 2026-06-05 → migrated to must-update-access reusable workflow + github.token
+
+| Change | Detail |
+|---|---|
+| `would-update-docs.js` | New script — updates GitHub files from env vars, no Ollama |
+| `would-update.yml` | Restructured: 4 jobs using `must-update-access` for Ollama |
+| Auth | `github.token` with `contents: write` — `GS_ANZ_TOKEN` deleted |
+| Secrets remaining | `OLLAMA_SECRET`, `OLLAMA_URL` (repo-level, org migration pending) |
+
 ## ASSET:gs-anz 2026-06-05 → full migration from GAS + Claude API to GitHub Actions + Ollama
 
 | Component | Detail |
