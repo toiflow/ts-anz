@@ -98,7 +98,7 @@ async function main() {
     insertEntry(issueFile.content, `## ISSUE:ANZ ${ts}\n${issueAnalysis}`),
     `would-update: issue ${ts}`
   );
-  console.log('✅ -ISSUE-v1.md updated');
+  console.log('✅ would/-content-issue-v1.md updated');
 
   // ── ASSET ──────────────────────────────────────────────────────────────
   console.log('\n🤖 Ollama → ASSET analysis...');
@@ -118,7 +118,7 @@ async function main() {
     insertEntry(assetFile.content, `## ASSET:ANZ ${ts}\n${assetAnalysis}`),
     `would-update: asset ${ts}`
   );
-  console.log('✅ -ASSET-v1.md updated');
+  console.log('✅ would/-content-asset-v1.md updated');
 
   console.log('\n✅ Done');
 }
