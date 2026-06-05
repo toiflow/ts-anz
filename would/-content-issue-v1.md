@@ -8,6 +8,12 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:ANZ 2026-06-06 06:41
+- No rate changes have been made or are expected at present.
+- Risks for borrowers include potential rate hikes sooner than anticipated, impacting borrowing costs.
+- Investors may face volatility in interest rate-sensitive assets; urgency to reevaluate fixed-income investments is advised.
+- The economy could experience increased inflation pressures if rates rise earlier than predicted, prompting businesses and consumers to adjust spending and saving behaviors.
+
 ## ISSUE:ANZ 2026-06-05 21:45
 - No rate changes have been made, and the OCR is expected to remain at 2.25% for now.
 - Higher rates will likely rise sooner than anticipated, posing risks to borrowers with variable interest rates.
