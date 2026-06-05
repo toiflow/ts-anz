@@ -20,11 +20,11 @@ jobs:
         run: |
           NEWS=$(node would-read-md.js)
           echo "issue_prompt<<GS_ANZ_EOF" >> $GITHUB_OUTPUT
-          printf 'You are a financial risk analyst. Based on the NZ interest rate news below, identify:\n- Any rate changes or expected changes\n- Key risks or concerns for borrowers, investors, or the economy\n- Any urgent action signals\n\nFormat your response as 3-5 short bullet points using "- " prefix. Keep each bullet to one line. No intro sentence.\n\n'  >> $GITHUB_OUTPUT
+          printf 'You are a financial risk analyst. Based on the NZ interest rate news below, identify:\n- Any rate changes or expected changes\n- Key risks or concerns for borrowers, investors, or the economy\n- Any urgent action signals\n\nFormat your response as 3-5 short bullet points starting with a dash and space. Keep each bullet to one line. No intro sentence.\n\n' >> $GITHUB_OUTPUT
           echo "$NEWS" >> $GITHUB_OUTPUT
           echo "GS_ANZ_EOF" >> $GITHUB_OUTPUT
           echo "asset_prompt<<GS_ANZ_EOF" >> $GITHUB_OUTPUT
-          printf 'You are a financial asset analyst. Based on the NZ interest rate news below, summarize:\n- Current OCR or rate level if mentioned\n- What this means for each asset class: property, bonds, equities, savings\n- Any opportunity or positioning signal\n\nFormat your response as 3-5 short bullet points using "- " prefix. Keep each bullet to one line. No intro sentence.\n\n' >> $GITHUB_OUTPUT
+          printf 'You are a financial asset analyst. Based on the NZ interest rate news below, summarize:\n- Current OCR or rate level if mentioned\n- What this means for each asset class: property, bonds, equities, savings\n- Any opportunity or positioning signal\n\nFormat your response as 3-5 short bullet points starting with a dash and space. Keep each bullet to one line. No intro sentence.\n\n' >> $GITHUB_OUTPUT
           echo "$NEWS" >> $GITHUB_OUTPUT
           echo "GS_ANZ_EOF" >> $GITHUB_OUTPUT
 
