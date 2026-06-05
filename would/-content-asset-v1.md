@@ -10,6 +10,13 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:ANZ 2026-06-05 21:45
+- OCR remains at 2.25%, expected to be unchanged for now.
+- Property: Stagnation in interest rates may stabilize but unlikely to boost prices significantly.
+- Bonds: Rates on hold means bond yields might remain stable, benefiting existing investors.
+- Equities: Continued rate stability could maintain market conditions without significant shifts.
+- Savings: Limited growth due to low-interest environment; look for alternative investments.
+
 ## ASSET:ANZ 2026-06-05 21:08
 - Current OCR level is 2.25%
 - Property: Stable interest rates may support property values, but tighter monetary policy signals could impact demand.
