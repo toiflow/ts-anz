@@ -1,0 +1,24 @@
+name: would-update
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # 8am NZT daily (UTC+12)
+  workflow_dispatch:       # allow manual run
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch news + update docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GS_ANZ_TOKEN }}
+          OLLAMA_URL: ${{ secrets.OLLAMA_URL }}
+          OLLAMA_MODEL: qwen2.5:7b
+        run: node would-read-md.js | node would-update-md.js
