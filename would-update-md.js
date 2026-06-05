@@ -92,9 +92,9 @@ async function main() {
   );
   console.log(issueAnalysis);
 
-  const issueFile = await githubGet('-ISSUE-v1.md');
+  const issueFile = await githubGet('would/-content-issue-v1.md');
   await githubPut(
-    '-ISSUE-v1.md', issueFile.sha,
+    'would/-content-issue-v1.md', issueFile.sha,
     insertEntry(issueFile.content, `## ISSUE:ANZ ${ts}\n${issueAnalysis}`),
     `would-update: issue ${ts}`
   );
@@ -112,9 +112,9 @@ async function main() {
   );
   console.log(assetAnalysis);
 
-  const assetFile = await githubGet('-ASSET-v1.md');
+  const assetFile = await githubGet('would/-content-asset-v1.md');
   await githubPut(
-    '-ASSET-v1.md', assetFile.sha,
+    'would/-content-asset-v1.md', assetFile.sha,
     insertEntry(assetFile.content, `## ASSET:ANZ ${ts}\n${assetAnalysis}`),
     `would-update: asset ${ts}`
   );
