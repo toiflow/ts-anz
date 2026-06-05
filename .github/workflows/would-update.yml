@@ -20,5 +20,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GS_ANZ_TOKEN }}
           OLLAMA_URL: ${{ secrets.OLLAMA_URL }}
+          OLLAMA_SECRET: ${{ secrets.OLLAMA_SECRET }}
           OLLAMA_MODEL: qwen2.5:7b
         run: node would-read-md.js | node would-update-md.js
