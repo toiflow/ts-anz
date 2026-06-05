@@ -8,6 +8,19 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:gs-anz 2026-06-05 → full migration from GAS + Claude API to GitHub Actions + Ollama
+
+| Component | Detail |
+|---|---|
+| RSS fetch | `would-read-md.js` — Google News, keyword filter, 5-item cap |
+| Ollama call | `would-update-md.js` — `qwen2.5:7b` via `local.toigroup.co.nz`, `x-secret` WAF header |
+| Schedule | `.github/workflows/would-update.yml` — 6am NZST daily (18:00 UTC) + `workflow_dispatch` |
+| Output | `would/-content-issue-v1.md`, `would/-content-asset-v1.md` |
+| Org | Repo migrated from `jayreck996/gs-anz` → `toiflow/gs-anz` |
+| Secrets | `GS_ANZ_TOKEN`, `OLLAMA_URL`, `OLLAMA_SECRET` set at repo level (org migration pending) |
+| Old GAS files | Deleted — `config.js`, `appsscript.json`, `must-*.js` |
+
+**Pipeline verified:** end-to-end test passed locally and via GitHub Actions `workflow_dispatch`.
 ## ASSET:ANZ 2026-06-05 19:15
 - Current OCR level: 2.25%
 - Property: Stable property market; no immediate need for significant adjustments in strategies.
