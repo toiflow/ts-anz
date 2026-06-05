@@ -8,6 +8,12 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:gs-anz 2026-06-06 → would-update-docs.js renamed to would-update-content.js
+
+- `git mv would-update-docs.js would-update-content.js` — rename tracked by git
+- `would-update.yml` `Update docs` step updated: `node would-update-content.js`
+- No logic changes — rename only
+
 ## ASSET:gs-anz 2026-06-06 → would-update.yml updated — must-update-access → must-update-content
 
 - `issue` job `uses:` updated to `toiflow/-toiflow/.github/workflows/must-update-content.yml@main`

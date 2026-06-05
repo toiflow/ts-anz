@@ -8,6 +8,12 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:gs-anz 2026-06-06 → would-update-docs.js renamed to would-update-content.js
+
+Name `would-update-docs` no longer reflects purpose — the script updates content files, not generic docs.
+
+**Fix:** Renamed to `would-update-content.js`. Updated `would-update.yml` `run:` call from `node would-update-docs.js` → `node would-update-content.js`.
+
 ## ISSUE:gs-anz 2026-06-06 → would-update.yml caller reference must be updated — must-update-access renamed to must-update-content
 
 `toiflow/-toiflow/.github/workflows/must-update-access.yml` was renamed to `must-update-content.yml`. Both `issue` and `asset` job `uses:` references in `would-update.yml` pointed to the old filename — pipeline would fail until updated.
