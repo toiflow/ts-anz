@@ -30,14 +30,14 @@ jobs:
 
   issue:
     needs: fetch
-    uses: toiflow/-toiflow/.github/workflows/must-update-access.yml@main
+    uses: toiflow/-toiflow/.github/workflows/must-update-content.yml@main
     with:
       prompt: ${{ needs.fetch.outputs.issue_prompt }}
     secrets: inherit
 
   asset:
     needs: fetch
-    uses: toiflow/-toiflow/.github/workflows/must-update-access.yml@main
+    uses: toiflow/-toiflow/.github/workflows/must-update-content.yml@main
     with:
       prompt: ${{ needs.fetch.outputs.asset_prompt }}
     secrets: inherit
@@ -58,3 +58,8 @@ jobs:
           ISSUE_ANALYSIS: ${{ needs.issue.outputs.response }}
           ASSET_ANALYSIS: ${{ needs.asset.outputs.response }}
         run: node would-update-docs.js
+      - name: Update CSV log
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ASSET_ANALYSIS: ${{ needs.asset.outputs.response }}
+        run: node would-update-csv.js

@@ -8,6 +8,11 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:gs-anz 2026-06-06 → would-update.yml caller reference must be updated — must-update-access renamed to must-update-content
+
+`toiflow/-toiflow/.github/workflows/must-update-access.yml` was renamed to `must-update-content.yml`. Both `issue` and `asset` job `uses:` references in `would-update.yml` pointed to the old filename — pipeline would fail until updated.
+
+**Fix:** Updated both references to `toiflow/-toiflow/.github/workflows/must-update-content.yml@main`.
 ## ISSUE:gs-anz 2026-06-05 → OLLAMA_SECRET + OLLAMA_URL pending org migration
 
 `GS_ANZ_TOKEN` removed. `OLLAMA_SECRET` and `OLLAMA_URL` still repo-level — pending `admin:org` auth to move to org level. Tracked in `-toiflow/-ISSUE-v1.md`.
