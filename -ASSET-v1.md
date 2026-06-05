@@ -8,6 +8,13 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:ANZ 2026-06-05 19:09
+- OCR at 2.25% is expected to remain unchanged.
+- Property: No significant impact; market stability maintained.
+- Bonds: Stable yields; prices may stabilize.
+- Equities: Mildly positive outlook; potential for slight increase in valuations.
+- Savings: Interest rates stable; savings returns unchanged.
+
 ## ASSET:ANZ 2026-06-03 17:53
 - Current level: OCR held at 2.25% (May 2026) in a split decision, but RBNZ has turned hawkish, flagging imminent hikes—possibly September—to counter oil/energy-driven inflation, with banks like ANZ tipping three hikes.
 - Property: Mortgage rates set to rise from the 2.25% trough; flat house prices expected and borrowers face pressure to fix/lock rates before hikes bite.
