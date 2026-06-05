@@ -10,6 +10,13 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:ANZ 2026-06-05 21:08
+- Current OCR level is 2.25%
+- Property: Stable interest rates may support property values, but tighter monetary policy signals could impact demand.
+- Bonds: Interest rate stability keeps bond yields low; potentially favorable for bond prices.
+- Equities: No immediate pressure from rate changes, but economic outlook should be monitored for long-term impacts.
+- Savings: Low-interest environment means lower returns on savings accounts.
+
 ## ASSET:ANZ 2026-06-05 21:00
 - Current OCR level: 2.25%
 - Property: Stable interest rates may support property values, but future rate hikes could dampen demand.
