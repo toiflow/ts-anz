@@ -4,7 +4,7 @@
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_OWNER = 'toiflow';
-const GITHUB_REPO  = 'gs-anz';
+const GITHUB_REPO  = 'ts-anz';
 const ANCHOR = '####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->';
 
 function nzTimestamp() {

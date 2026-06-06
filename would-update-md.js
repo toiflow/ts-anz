@@ -6,7 +6,7 @@ const OLLAMA_URL   = process.env.OLLAMA_URL   || 'https://local.toigroup.co.nz';
 const OLLAMA_MODEL = process.env.OLLAMA_MODEL || 'qwen2.5:7b';
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_OWNER = 'toiflow';
-const GITHUB_REPO  = 'gs-anz';
+const GITHUB_REPO  = 'ts-anz';
 const ANCHOR = '####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->';
 
 async function readStdin() {
