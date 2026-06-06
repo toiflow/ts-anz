@@ -4,7 +4,7 @@
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_OWNER = 'toiflow';
-const GITHUB_REPO  = 'gs-anz';
+const GITHUB_REPO  = 'ts-anz';
 const CSV_PATH     = 'would/-log-asset-v1.csv';
 const HEADERS      = 'date,asset_analysis\n';
 
