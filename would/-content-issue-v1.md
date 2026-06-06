@@ -8,6 +8,12 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:ANZ 2026-06-07 07:17
+- No rate changes or expected changes as of now.
+- Higher mortgage rates provide some temporary relief but may increase financial strain on borrowers.
+- Investors should remain vigilant about potential future rate hikes and their impact on bond prices.
+- Urgent action signals are not present, but borrowers might consider refinancing if better terms become available.
+
 ## ISSUE:ANZ 2026-06-06 16:48
 - No rate changes or expected changes in the immediate future.
 - Key risks include potential earlier-than-expected interest rate hikes.
