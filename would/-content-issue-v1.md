@@ -8,6 +8,11 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:ANZ 2026-06-06 16:48
+- No rate changes or expected changes in the immediate future.
+- Key risks include potential earlier-than-expected interest rate hikes.
+- Investors and borrowers should monitor economic indicators closely for signals of impending rate increases.
+
 ## ISSUE:ANZ 2026-06-06 12:19
 - RBNZ expected to leave official cash rate unchanged at 2.25%
 - Rate hikes are likely to occur sooner than previously anticipated
