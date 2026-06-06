@@ -10,6 +10,13 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:ANZ 2026-06-06 16:48
+- Current OCR level: 2.25%
+- Property: No immediate changes expected; property market may stabilize.
+- Bonds: Slight pressure as rates are on hold but could rise in future.
+- Equities: Stable outlook, potential for minor adjustments based on interest rate expectations.
+- Savings: Low returns due to low-interest environment; consider alternatives like equities or property if seeking higher yields.
+
 ## ASSET:ANZ 2026-06-06 12:19
 - Current OCR level is 2.25%
 - Property: Rates on hold for now but expected to rise, property market may stabilize
