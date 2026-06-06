@@ -8,6 +8,22 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:gs-anz 2026-06-06 → asset job ran concurrently with issue — both hitting Ollama simultaneously
+
+**Symptom:** Intermittent empty responses from Ollama when `issue` and `asset` jobs ran at the same time.
+
+**Root cause:** `asset` had `needs: fetch` — it started in parallel with `issue`. Two simultaneous calls to `qwen2.5:7b` caused one to return empty.
+
+**Fix:** Changed `asset` to `needs: [fetch, issue]` — now runs strictly after `issue` completes.
+
+## ISSUE:gs-anz 2026-06-06 → OLLAMA_SECRET and OLLAMA_URL were repo-level overrides — not true org level
+
+**Symptom:** gs-anz worked while ts-crypto (new repo) failed to get `OLLAMA_SECRET` — length 0 in GitHub Actions.
+
+**Root cause:** `gs-anz` had repo-level `OLLAMA_SECRET` and `OLLAMA_URL` set (shown as "This secret overrides an organization secret" in settings). The org-level secrets existed but were set via `echo` pipe (trailing `\n`), making their values incorrect. gs-anz bypassed this with its own repo-level copies.
+
+**Fix:** All repos made public (GitHub Free plan restriction). Org secrets re-set via `--body` flag. Repo-level overrides on gs-anz are now redundant — org secrets take precedence. See `-toiflow` ISSUE/ASSET entries for full detail.
+
 ## ISSUE:gs-anz 2026-06-06 → would-update-docs.js renamed to would-update-content.js
 
 Name `would-update-docs` no longer reflects purpose — the script updates content files, not generic docs.

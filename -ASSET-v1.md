@@ -8,6 +8,19 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:gs-anz 2026-06-06 → asset job serialised — needs: [fetch, issue]
+
+- Changed `asset` job dependency from `needs: fetch` → `needs: [fetch, issue]`
+- Eliminates concurrent Ollama requests between `issue` and `asset` jobs
+- Matches ts-crypto sequencing — both repos now use identical job ordering
+
+## ASSET:gs-anz 2026-06-06 → -log-asset-v1.csv — first row confirmed written (accidental run #7)
+
+- `would/-log-asset-v1.csv` created with headers `date,asset_analysis`
+- First data row written 2026-06-06 by accidental workflow trigger during ts-crypto debugging
+- Content: OCR 2.25% — property/bonds/equities/savings analysis
+- `would-update-csv.js` confirmed working end-to-end
+
 ## ASSET:gs-anz 2026-06-06 → would-update-docs.js renamed to would-update-content.js
 
 - `git mv would-update-docs.js would-update-content.js` — rename tracked by git
