@@ -36,7 +36,7 @@ jobs:
     secrets: inherit
 
   asset:
-    needs: fetch
+    needs: [fetch, issue]
     uses: toiflow/-toiflow/.github/workflows/must-update-content.yml@main
     with:
       prompt: ${{ needs.fetch.outputs.asset_prompt }}
