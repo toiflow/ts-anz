@@ -8,6 +8,12 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:ANZ 2026-06-06 12:19
+- RBNZ expected to leave official cash rate unchanged at 2.25%
+- Rate hikes are likely to occur sooner than previously anticipated
+- Borrowers face potential increases in borrowing costs, affecting mortgage and consumer credit
+- Investors should prepare for potential volatility in bond markets due to changing interest rates
+
 ## ISSUE:ANZ 2026-06-06 06:41
 - No rate changes have been made or are expected at present.
 - Risks for borrowers include potential rate hikes sooner than anticipated, impacting borrowing costs.
