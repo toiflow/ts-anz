@@ -60,21 +60,21 @@ async function main() {
   const ts = nzTimestamp();
   console.log(`📅 ${ts}`);
 
-  const issueFile = await githubGet('would/CONTENT-ISSUE-V1.md');
+  const issueFile = await githubGet('could/CONTENT-ISSUE-V1.md');
   await githubPut(
-    'would/CONTENT-ISSUE-V1.md', issueFile.sha,
+    'could/CONTENT-ISSUE-V1.md', issueFile.sha,
     insertEntry(issueFile.content, `## ISSUE:ANZ ${ts}\n${issueAnalysis}`),
     `would-update: issue ${ts}`
   );
-  console.log('✅ would/CONTENT-ISSUE-V1.md updated');
+  console.log('✅ could/CONTENT-ISSUE-V1.md updated');
 
-  const assetFile = await githubGet('would/CONTENT-ASSET-V1.md');
+  const assetFile = await githubGet('could/CONTENT-ASSET-V1.md');
   await githubPut(
-    'would/CONTENT-ASSET-V1.md', assetFile.sha,
+    'could/CONTENT-ASSET-V1.md', assetFile.sha,
     insertEntry(assetFile.content, `## ASSET:ANZ ${ts}\n${assetAnalysis}`),
     `would-update: asset ${ts}`
   );
-  console.log('✅ would/CONTENT-ASSET-V1.md updated');
+  console.log('✅ could/CONTENT-ASSET-V1.md updated');
 
   console.log('\n✅ Done');
 }
