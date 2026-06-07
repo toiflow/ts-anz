@@ -8,6 +8,11 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:ANZ 2026-06-08 07:18
+- No rate changes or expected changes at 2.25%.
+- Higher mortgage rates provide the Reserve Bank some flexibility, but ongoing risks to borrowers should be monitored.
+- Economic stability is maintained, signaling no immediate urgent actions required by investors or borrowers.
+
 ## ISSUE:ANZ 2026-06-07 17:13
 - RBNZ expected to leave official cash rate unchanged at 2.25%
 - Higher mortgage rates provide the Reserve Bank "a bit of breathing space"
