@@ -8,6 +8,13 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:ANZ 2026-06-07 17:13
+- RBNZ expected to leave official cash rate unchanged at 2.25%
+- Higher mortgage rates provide the Reserve Bank "a bit of breathing space"
+- No imminent changes in OCR forecast as of February 2026
+- Recent news indicates no urgent action signals from RBNZ
+- Key risks include potential economic impact from higher mortgage rates on borrowers
+
 ## ISSUE:ANZ 2026-06-07 07:17
 - No rate changes or expected changes as of now.
 - Higher mortgage rates provide some temporary relief but may increase financial strain on borrowers.
