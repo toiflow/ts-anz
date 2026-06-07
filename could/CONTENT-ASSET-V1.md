@@ -10,6 +10,13 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:ANZ 2026-06-08 07:18
+- Current OCR or rate level: 2.25%
+- Property: No change in interest rates is neutral for property, but higher mortgage rates might cool down the market.
+- Bonds: Interest rates unchanged are bearish for bonds, potentially leading to lower bond prices.
+- Equities: Stable interest rates could support equities by reducing uncertainty, though economic factors remain key.
+- Savings: Savings may not see significant returns with current low-to-moderate interest rates.
+
 ## ASSET:ANZ 2026-06-07 17:13
 - Current OCR or rate level: 2.25%
 - Property: Stable rates may indicate no immediate changes in property market, but higher mortgage rates provide the Reserve Bank with some flexibility.
