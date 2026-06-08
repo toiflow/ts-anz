@@ -67,11 +67,13 @@ jobs:
       - name: Update docs
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          QUARTER_OVERRIDE: ${{ inputs.quarter_override }}
           ISSUE_ANALYSIS: ${{ needs.issue.outputs.response }}
           ASSET_ANALYSIS: ${{ needs.asset.outputs.response }}
         run: node would-update-content.js
       - name: Update CSV log
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          QUARTER_OVERRIDE: ${{ inputs.quarter_override }}
           ASSET_ANALYSIS: ${{ needs.asset.outputs.response }}
         run: node would-update-csv.js

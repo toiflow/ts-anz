@@ -3,6 +3,14 @@
 // Usage: GITHUB_TOKEN=... ISSUE_ANALYSIS=... ASSET_ANALYSIS=... node would-update-docs.js
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const QUARTER = getCurrentQuarter(process.env.QUARTER_OVERRIDE);
+
+function getCurrentQuarter(override) {
+  if (override) return override;
+  const now = new Date();
+  return `${now.getFullYear()}Q${Math.ceil((now.getMonth() + 1) / 3)}`;
+}
+
 const GITHUB_OWNER = 'toiflow';
 const GITHUB_REPO  = 'ts-anz';
 const ANCHOR = '####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->';
@@ -60,21 +68,21 @@ async function main() {
   const ts = nzTimestamp();
   console.log(`📅 ${ts}`);
 
-  const issueFile = await githubGet('could/CONTENT-ISSUE-V1.md');
+  const issueFile = await githubGet(`could/CONTENT-ISSUE-${QUARTER}.md`);
   await githubPut(
-    'could/CONTENT-ISSUE-V1.md', issueFile.sha,
+    `could/CONTENT-ISSUE-${QUARTER}.md`, issueFile.sha,
     insertEntry(issueFile.content, `## ISSUE:ANZ ${ts}\n${issueAnalysis}`),
     `would-update: issue ${ts}`
   );
-  console.log('✅ could/CONTENT-ISSUE-V1.md updated');
+  console.log(`✅ could/CONTENT-ISSUE-${QUARTER}.md updated`);
 
-  const assetFile = await githubGet('could/CONTENT-ASSET-V1.md');
+  const assetFile = await githubGet(`could/CONTENT-ASSET-${QUARTER}.md`);
   await githubPut(
-    'could/CONTENT-ASSET-V1.md', assetFile.sha,
+    `could/CONTENT-ASSET-${QUARTER}.md`, assetFile.sha,
     insertEntry(assetFile.content, `## ASSET:ANZ ${ts}\n${assetAnalysis}`),
     `would-update: asset ${ts}`
   );
-  console.log('✅ could/CONTENT-ASSET-V1.md updated');
+  console.log(`✅ could/CONTENT-ASSET-${QUARTER}.md updated`);
 
   console.log('\n✅ Done');
 }
