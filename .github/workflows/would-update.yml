@@ -14,8 +14,6 @@ jobs:
   timing:
     uses: toiflow/-toiflow/.github/workflows/must-update-timing.yml@main
     secrets: inherit
-    with:
-      quarter_override: ${{ inputs.quarter_override }}
 
   fetch:
     needs: timing
