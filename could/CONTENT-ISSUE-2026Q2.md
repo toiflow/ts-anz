@@ -8,6 +8,12 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ISSUE:ANZ 2026-06-10 08:04
+- RBNZ expected to leave official cash rate unchanged at 2.25%
+- Mortgage rates rise due to anticipated OCR hikes
+- RBNZ warns of earlier-than-expected rate rises, signaling potential economic pressures
+- No urgent action signals identified from current news sources
+
 ## ISSUE:ANZ 2026-06-09 17:10
 - NZ mortgage rates have risen due to expected OCR hikes.
 - Borrowers face increased costs and may struggle with higher interest payments.
