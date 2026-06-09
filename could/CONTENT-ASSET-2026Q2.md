@@ -10,6 +10,13 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:ANZ 2026-06-09 17:10
+- Current OCR remains at 2.25%
+- Property: Stable but with higher mortgage costs; potential cooling effect
+- Bonds: Slight increase in demand as fixed rates appeal; yields may rise
+- Equities: Mildly positive impact due to rate stability,但仍需谨慎；可能波动增加
+- Savings: Interest returns slightly improve, but real returns could be muted
+
 ## ASSET:ANZ 2026-06-09 08:10
 - OCR level remains at 2.25%
 - Property: Stability; bonds: stable yields but potential for slight increases in value; equities: cautious approach with possible volatility; savings: moderate returns due to higher interest rates
