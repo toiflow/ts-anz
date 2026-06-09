@@ -15,6 +15,32 @@ const GITHUB_OWNER = 'toiflow';
 const GITHUB_REPO  = 'ts-anz';
 const ANCHOR = '####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->';
 
+const ISSUE_HEADER = `ISSUE LOG
+INSTRUCTION FOR AI MODEL:
+
+ALWAYS ADD NEW ISSUE ENTRIES AT THE TOP, DIRECTLY BELOW THIS HEADER.
+
+NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES.
+
+REQUIRED FORMAT FOR EACH ISSUE ENTRY:
+
+## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
+
+${ANCHOR}`;
+
+const ASSET_HEADER = `ASSET LOG
+INSTRUCTION FOR AI MODEL:
+
+ALWAYS ADD NEW ASSET ENTRIES AT THE TOP, DIRECTLY BELOW THIS HEADER.
+
+NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES.
+
+REQUIRED FORMAT FOR EACH ASSET ENTRY:
+
+## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
+
+${ANCHOR}`;
+
 function nzTimestamp() {
   const parts = new Intl.DateTimeFormat('en-CA', {
     timeZone: 'Pacific/Auckland',
@@ -25,11 +51,12 @@ function nzTimestamp() {
   return `${get('year')}-${get('month')}-${get('day')} ${get('hour')}:${get('minute')}`;
 }
 
-async function githubGet(path) {
+async function githubGetOrCreate(path, header) {
   const res = await fetch(
     `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}`,
     { headers: { 'Authorization': `Bearer ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github+json' } }
   );
+  if (res.status === 404) return { sha: null, content: header };
   if (!res.ok) throw new Error(`GitHub GET ${path} failed: ${res.status}`);
   const data = await res.json();
   return { sha: data.sha, content: Buffer.from(data.content, 'base64').toString('utf8') };
@@ -42,7 +69,7 @@ async function githubPut(path, sha, content, message) {
       method: 'PUT',
       headers: { 'Authorization': `Bearer ${GITHUB_TOKEN}`, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        message, sha,
+        message, ...(sha ? { sha } : {}),
         content: Buffer.from(content).toString('base64'),
         committer: { name: 'gs-anz', email: 'jayreck996@gmail.com' }
       })
@@ -68,7 +95,7 @@ async function main() {
   const ts = nzTimestamp();
   console.log(`📅 ${ts}`);
 
-  const issueFile = await githubGet(`could/CONTENT-ISSUE-${QUARTER}.md`);
+  const issueFile = await githubGetOrCreate(`could/CONTENT-ISSUE-${QUARTER}.md`, ISSUE_HEADER);
   await githubPut(
     `could/CONTENT-ISSUE-${QUARTER}.md`, issueFile.sha,
     insertEntry(issueFile.content, `## ISSUE:ANZ ${ts}\n${issueAnalysis}`),
@@ -76,7 +103,7 @@ async function main() {
   );
   console.log(`✅ could/CONTENT-ISSUE-${QUARTER}.md updated`);
 
-  const assetFile = await githubGet(`could/CONTENT-ASSET-${QUARTER}.md`);
+  const assetFile = await githubGetOrCreate(`could/CONTENT-ASSET-${QUARTER}.md`, ASSET_HEADER);
   await githubPut(
     `could/CONTENT-ASSET-${QUARTER}.md`, assetFile.sha,
     insertEntry(assetFile.content, `## ASSET:ANZ ${ts}\n${assetAnalysis}`),
