@@ -10,6 +10,13 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:ANZ 2026-06-11 08:25
+- Current OCR or rate level: 2.25%
+- Property: Rates unchanged, no immediate impact; prices may stabilize.
+- Bonds: Interest rates stable, potentially attracting more bond investments.
+- Equities: Lack of rate hike signals could support stock markets; sentiment neutral to positive.
+- Savings: No change in savings returns; may keep inflation-adjusted real yields low.
+
 ## ASSET:ANZ 2026-06-10 08:04
 - Current OCR level: 2.25%
 - Property: No immediate impact, but higher mortgage rates could cool the market.
